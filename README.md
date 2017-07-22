@@ -6,7 +6,7 @@ Template project for building [KrimzenNinja](https://github.com/KrimzenNinja/) n
 ## Process
 
 1. Copy this template.
-1. In the `package.json` file update the following fields: 
+1. In the `package.json` file update the following fields:
 	1. `name`
 	1. `description`
 	1. `repository.url`
@@ -20,7 +20,9 @@ Template project for building [KrimzenNinja](https://github.com/KrimzenNinja/) n
 1. In the `.circleci/config.yml` file:
 	1. Update the `working_directory` field.
 	1. If this is a private package then after `npm publish .` add `--access restricted`
-    
+1. Add the project to CircleCi if it is not picked up automatically
+1. Add the `$NPM_TOKEN` environment variable
+
 ## TODO
 
 Make a Yeoman generator to do all the steps.
