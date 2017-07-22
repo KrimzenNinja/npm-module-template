@@ -1,0 +1,64 @@
+{
+  "name": "npm-module-template",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=8.1.2"
+  },
+  "description": "Template project for building KrimZen Ninja npm templates",
+  "main": "./lib/index.js",
+  "scripts": {
+    "build": "babel src -d lib --copy-files --source-maps",
+    "watch": "babel src -d lib -w --copy-files --source-maps",
+    "test": "nyc mocha \"test/**/*.unit.js\" \"test/**/*.integration.js\"",
+    "unit-test": "nyc mocha \"test/**/*.unit.js\"",
+    "prettier": "prettier --write --tab-width=4 --single-quote=true --print-width=120 \"{src,test}/**/*.js\" \"index.js\"",
+    "lint": "eslint \"src/**/*.js\" \"test/**/*.js\" index.js --fix",
+    "lint-ci": "eslint \"src/**/*.js\" \"test/**/*.js\" index.js"
+  },
+  "nyc": {
+    "check-coverage": true,
+    "lines": 0,
+    "functions": 0,
+    "branches": 0,
+    "statements": 0,
+    "reporter": [
+      "lcov",
+      "text-summary"
+    ],
+    "all": true,
+    "exclude": [
+      "coverage/**",
+      "test/**",
+      "lib/**"
+    ],
+    "require": [
+      "babel-register"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KrimzenNinja/npm-module-template.git"
+  },
+  "keywords": [
+    "KrimZenNinja",
+    "npm"
+  ],
+  "author": "Ryan Kotzen <potz666@gmail.com> (http://blog.exigentcoder.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KrimzenNinja/npm-module-template/issues"
+  },
+  "homepage": "https://github.com/KrimzenNinja/npm-module-template#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.5.2",
+    "chai": "^4.0.2",
+    "eslint": "^4.1.1",
+    "eslint-config-prettier": "^2.2.0",
+    "eslint-plugin-node": "^5.1.0",
+    "eslint-plugin-prettier": "^2.1.2",
+    "mocha": "^3.4.2",
+    "nyc": "^11.0.3",
+    "prettier": "^1.4.4"
+  }
+}

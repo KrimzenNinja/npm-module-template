@@ -1,2 +1,3 @@
 # npm-module-template
-Template project for building KrimzenNinja npm modules
+
+Template project for building [KrimzenNinja](https://github.com/KrimzenNinja/) npm modules
