@@ -5,6 +5,9 @@
     "node": ">=8.1.2"
   },
   "description": "Template project for building KrimZen Ninja npm templates",
+  "files": [
+    "lib"
+  ],
   "main": "./lib/index.js",
   "scripts": {
     "build": "babel src -d lib --copy-files --source-maps",

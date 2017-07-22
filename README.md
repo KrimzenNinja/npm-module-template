@@ -25,4 +25,5 @@ Template project for building [KrimzenNinja](https://github.com/KrimzenNinja/) n
 
 ## TODO
 
-Make a Yeoman generator to do all the steps.
+1. Make a Yeoman generator to do all the steps.
+1. Add snyk &| nsp 
