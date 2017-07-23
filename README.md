@@ -6,7 +6,9 @@ Template project for building [KrimzenNinja](https://github.com/KrimzenNinja/) n
 
 Install [Chandler](https://github.com/mattbrictson/chandler) to sync your `CHANGELOG.md` entries to GitHub
 
-## Process
+## Getting Started
+
+Delete this from the readme once you have setup your project.
 
 1.  Copy this template.
 2.  In the `package.json` file update the following fields:
@@ -28,12 +30,27 @@ Install [Chandler](https://github.com/mattbrictson/chandler) to sync your `CHANG
 
 ## API
 
-Put link here.
+[See details](https://github.com/KrimzenNinja/npm-module-template/blob/master/API.md)
+
+# How to publish to NPM
+
+You can either do releases from the master branch or follow the LTS model and branch off when you do a release.
+
+1. Ensure you are on the branch you want to publish from.
+1. Decide based on what is going into the release how the version number is going to change, see [Semantic Versioning](http://semver.org/) for more info.
+1. The `CHANGELOG.md` file should have pending changes documented in the `Unreleased` section, create a new heading for this version and cut the relevant changes and paste them into the new section.
+1. Commit the changes to the `CHANGELOG.md` file.
+1. Run one of the prebuilt publish commands that matches your `semver` `patch`, `minor`, `major`
+	> `npm run patch`
+	If none of the prebuilt ones fit, you can use `npm version [major | minor | patch | premajor | preminor | prepatch | prerelease] -m "A message that makes sense"`
+1. If you didn't publish from master, make sure to merge back into master if you were fixing a bug or the changes released need to go back to master.
 
 ## TODO
 
-1.  Make a Yeoman generator to do all the steps.
-2.  Add snyk &| nsp 
+1. Make a Yeoman generator to do all the steps.
+2. Add snyk &| nsp 
+3. Update CI step to push coverage to codecov or coveralls 
+4. Badges in the README.md
 
 ## License
 
