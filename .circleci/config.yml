@@ -5,9 +5,6 @@ jobs:
     docker:
       - image: circleci/node:8
     steps:
-      - run:
-          name: set-npm-registry-token
-          command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
       - checkout
       - restore_cache:
           key: dependency-cache-{{ checksum "package.json" }}
@@ -30,9 +27,3 @@ jobs:
       - store_artifacts:
           path: coverage
           prefix: coverage
-      - deploy:
-          name: Deploy To NPM
-          command: |
-            if [ "${CIRCLE_BRANCH}" == "production" ]; then
-              npm publish .
-            fi
