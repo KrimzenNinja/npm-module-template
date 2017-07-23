@@ -8,6 +8,8 @@ Template project for building [KrimzenNinja](https://github.com/KrimzenNinja/) n
 
 ![Known Vulnerabilities](https://snyk.io/test/npm/krimzen-ninja-npm-module-template/badge.svg)
 
+[![codecov](https://codecov.io/gh/KrimzenNinja/npm-module-template/branch/master/graph/badge.svg)](https://codecov.io/gh/KrimzenNinja/npm-module-template)
+
 ## Prerequisites
 
 Install [Chandler](https://github.com/mattbrictson/chandler) to sync your `CHANGELOG.md` entries to GitHub
@@ -57,10 +59,7 @@ You can either add your project via the [web dashboard](https://snyk.io/) or via
 
 ## TODO
 
-1. Make a Yeoman generator to do all the steps. 
-1. Update CI step to push coverage to codecov
-1. Badges in the README.md (codecov & d
-    * https://david-dm.org/
+1. Make a Yeoman generator to do all the steps.
 
 ## License
 
