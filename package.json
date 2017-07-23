@@ -11,7 +11,7 @@
   "main": "./lib/index.js",
   "scripts": {
     "clean": "rimraf lib",
-    "prebuild": "npm run docs && npm run clean",
+    "prebuild": "npm run clean",
     "build": "babel src -d lib --copy-files --source-maps",
     "watch": "npm-watch",
     "coverage": "npm test -- --coverage",
@@ -26,7 +26,7 @@
     "patch": "npm version patch && npm publish",
     "minor": "npm version minor && npm publish",
     "major": "npm version major && npm publish",
-    "prepublishOnly": "npm run prettier && npm run lint-ci && npm t && npm run flow && npm run build",
+    "prepublishOnly": "npm run prettier && npm run lint-ci && npm t && npm run flow && npm run docs && npm run build",
     "postpublish": "git push origin master --follow-tags && chandler push"
   },
   "watch": {

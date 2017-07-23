@@ -41,7 +41,7 @@ You can either do releases from the master branch or follow the LTS model and br
 1. The `CHANGELOG.md` file should have pending changes documented in the `Unreleased` section, create a new heading for this version and cut the relevant changes and paste them into the new section.
 1. Commit the changes to the `CHANGELOG.md` file.
 1. Run one of the prebuilt publish commands that matches your `semver` `patch`, `minor`, `major`
-	> `npm run patch`
+	> `npm run patch -m "A message that makes sense"`
 	If none of the prebuilt ones fit, you can use `npm version [major | minor | patch | premajor | preminor | prepatch | prerelease] -m "A message that makes sense"`
 1. If you didn't publish from master, make sure to merge back into master if you were fixing a bug or the changes released need to go back to master.
 
