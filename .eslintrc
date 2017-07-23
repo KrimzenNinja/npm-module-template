@@ -2,9 +2,9 @@
     "env": {
         "browser": false,
         "node": true,
-        "es6": true,
-        "mocha": false
+        "es6": true
     },
+    "parser": "babel-eslint",
     "parserOptions": {
         "ecmaVersion": 8,
         "sourceType": "module",
@@ -16,7 +16,9 @@
     },
     "plugins": [
         "node",
-        "prettier"
+        "prettier",
+        "flowtype",
+        "flowtype-errors"
     ],
     "extends": [
         "eslint:recommended",
@@ -61,6 +63,7 @@
                 "tabWidth": 4,
                 "printWidth": 120
             }
-        ]
+        ],
+        "flowtype-errors/show-errors": 2
     }
 }

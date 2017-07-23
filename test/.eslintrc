@@ -1,12 +1,6 @@
 {
     "env": {
-        "mocha": true
-    },
-    "globals": {
-        "expect": true,
-        "assert": true,
-        "chai": true,
-        "should": true
+        "jest": true
     },
     "rules": {
         "node/no-unpublished-require":["off"]

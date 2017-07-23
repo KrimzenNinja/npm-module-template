@@ -10,33 +10,30 @@
   ],
   "main": "./lib/index.js",
   "scripts": {
+    "clean": "rimraf lib",
+    "prebuild": "npm run docs && npm run clean",
     "build": "babel src -d lib --copy-files --source-maps",
-    "watch": "babel src -d lib -w --copy-files --source-maps",
-    "test": "nyc mocha \"test/**/*.unit.js\" \"test/**/*.integration.js\"",
+    "watch": "npm-watch",
+    "test": "jest",
     "unit-test": "nyc mocha \"test/**/*.unit.js\"",
-    "prettier": "prettier --write --tab-width=4 --single-quote=true --print-width=120 \"{src,test}/**/*.js\" \"index.js\"",
-    "lint": "eslint \"src/**/*.js\" \"test/**/*.js\" index.js --fix",
-    "lint-ci": "eslint \"src/**/*.js\" \"test/**/*.js\" index.js"
+    "prettier": "prettier --write --tab-width=4 --single-quote=true --print-width=120 \"{src,test}/**/*.js\"",
+    "lint": "eslint src test --fix",
+    "lint-ci": "eslint src test",
+    "flow": "flow check",
+    "docs": "documentation readme src --section=API",
+    "patch": "npm version patch && npm publish",
+    "minor": "npm version minor && npm publish",
+    "major": "npm version major && npm publish",
+    "prepublish": "npm run prettier && npm run lint-ci && npm t && npm run flow && npm run build",
+    "postpublish": "git push origin master --follow-tags"
   },
-  "nyc": {
-    "check-coverage": true,
-    "lines": 0,
-    "functions": 0,
-    "branches": 0,
-    "statements": 0,
-    "reporter": [
-      "lcov",
-      "text-summary"
-    ],
-    "all": true,
-    "exclude": [
-      "coverage/**",
-      "test/**",
-      "lib/**"
-    ],
-    "require": [
-      "babel-register"
-    ]
+  "watch": {
+    "test": "{src,test}/*.js",
+    "lint-ci": "{src,test}/*.js"
+  },
+  "jest": {
+    "testRegex": "/test/.*",
+    "testEnvironment": "node"
   },
   "repository": {
     "type": "git",
@@ -54,14 +51,21 @@
   "homepage": "https://github.com/KrimzenNinja/npm-module-template#readme",
   "devDependencies": {
     "babel-cli": "^6.24.1",
+    "babel-eslint": "^7.1.1",
+    "babel-jest": "^20.0.0",
     "babel-preset-env": "^1.5.2",
-    "chai": "^4.0.2",
+    "babel-preset-flow": "^6.23.0",
+    "documentation": "4.0.0-rc.1",
     "eslint": "^4.1.1",
     "eslint-config-prettier": "^2.2.0",
+    "eslint-plugin-flowtype": "^2.29.2",
+    "eslint-plugin-flowtype-errors": "^3.0.0",
     "eslint-plugin-node": "^5.1.0",
     "eslint-plugin-prettier": "^2.1.2",
-    "mocha": "^3.4.2",
-    "nyc": "^11.0.3",
-    "prettier": "^1.4.4"
+    "flow-bin": "^0.50.0",
+    "jest-cli": "^20.0.0",
+    "npm-watch": "^0.2.0",
+    "prettier": "^1.4.4",
+    "rimraf": "^2.6.1"
   }
 }
