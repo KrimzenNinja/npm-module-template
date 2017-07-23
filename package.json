@@ -15,7 +15,6 @@
     "build": "babel src -d lib --copy-files --source-maps",
     "watch": "npm-watch",
     "coverage": "npm test -- --coverage",
-    "postcoverage": "opn coverage/lcov-report/index.html",
     "codecov": "codecov",
     "test": "jest",
     "test-dependencies": "snyk test && nsp check",
@@ -71,7 +70,6 @@
     "jest-cli": "^20.0.0",
     "npm-watch": "^0.2.0",
     "nsp": "^2.6.3",
-    "opn-cli": "^3.1.0",
     "prettier": "^1.4.4",
     "rimraf": "^2.6.1",
     "snyk": "^1.36.2"
