@@ -6,7 +6,7 @@
 
 ### sayHello
 
-[src/index.js:8-8](https://github.com/KrimzenNinja/npm-module-template/blob/1c4722407a2ace834e30ee2c95ba76f1e02271c6/src/index.js#L8-L8 "Source code on GitHub")
+[src/index.js:8-8](https://github.com/KrimzenNinja/npm-module-template/blob/9d3485fd98c5783cba675c502d1cf3ae958a5c39/src/index.js#L8-L8 "Source code on GitHub")
 
 This function says hello.
 
@@ -15,13 +15,3 @@ This function says hello.
 -   `name` **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** Some name to say hello to.
 
 Returns **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** The hello message.
-
-### Echo
-
-[src/index.js:12-14](https://github.com/KrimzenNinja/npm-module-template/blob/1c4722407a2ace834e30ee2c95ba76f1e02271c6/src/index.js#L12-L14 "Source code on GitHub")
-
-**Parameters**
-
--   `message` **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** 
-
-Returns **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** 
