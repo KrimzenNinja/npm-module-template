@@ -2,11 +2,11 @@
 
 Template project for building [KrimzenNinja](https://github.com/KrimzenNinja/) npm modules
 
-![NPM](https://nodei.co/npm/krimzen-ninja-npm-module-template.png)
+![NPM](https://nodei.co/npm/npm-module-template.png)
 
 ![CircleCi](https://circleci.com/gh/KrimzenNinja/npm-module-template.svg?style=shield)
 
-![Known Vulnerabilities](https://snyk.io/test/npm/krimzen-ninja-npm-module-template/badge.svg)
+![Known Vulnerabilities](https://snyk.io/test/npm/npm-module-template/badge.svg)
 
 [![codecov](https://codecov.io/gh/KrimzenNinja/npm-module-template/branch/master/graph/badge.svg)](https://codecov.io/gh/KrimzenNinja/npm-module-template)
 
@@ -57,14 +57,6 @@ You can either do releases from the master branch or follow the LTS model and br
 
 You can either add your project via the [web dashboard](https://snyk.io/) or via the cli by installing the lib `npm i -g snyk` and then running the setup `snyk wizzard`.
 
-## TODO
-
-1. Make a Yeoman generator to do all the steps.
-
 ## License
 
 MIT © [Ryan Kotzen](https://github.com/eXigentCoder)
-
-## Reference
-
-This project borrows heavily from https://github.com/diegohaz/nod/tree/generator-nod
