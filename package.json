@@ -1,6 +1,6 @@
 {
-  "name": "krimzen-ninja-npm-module-template",
-  "version": "0.0.7",
+  "name": "npm-module-template",
+  "version": "0.0.1",
   "engines": {
     "node": ">=8.1.2"
   },
@@ -46,7 +46,7 @@
     "KrimZenNinja",
     "npm"
   ],
-  "author": "Ryan Kotzen <potz666@gmail.com> (http://blog.exigentcoder.com)",
+  "author": "Ryan Kotzen <potz666@gmail.com> (https://github.com/eXigentCoder)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/KrimzenNinja/npm-module-template/issues"
