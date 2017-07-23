@@ -64,3 +64,7 @@ You can either add your project via the [web dashboard](https://snyk.io/) or via
 ## License
 
 MIT © [Ryan Kotzen](https://github.com/eXigentCoder)
+
+## Reference
+
+This project borrows heavily from https://github.com/diegohaz/nod/tree/generator-nod
