@@ -8,7 +8,3 @@
 const sayHello = (name: string = 'World'): string => `Hello, ${name}!`;
 
 export default sayHello;
-
-export function Echo(message: string): string {
-    return message;
-}
