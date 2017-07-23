@@ -16,6 +16,7 @@
     "watch": "npm-watch",
     "coverage": "npm test -- --coverage",
     "postcoverage": "opn coverage/lcov-report/index.html",
+    "codecov": "codecov",
     "test": "jest",
     "test-dependencies": "snyk test && nsp check",
     "unit-test": "nyc mocha \"test/**/*.unit.js\"",

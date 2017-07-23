@@ -29,4 +29,4 @@ jobs:
           prefix: coverage
       - run:
           name: post-codecov
-          command: codecov --token=$CODECOV_TOKEN
+          command: npm run codecov --token=$CODECOV_TOKEN
