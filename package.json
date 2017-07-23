@@ -43,8 +43,17 @@
     "url": "git+https://github.com/KrimzenNinja/npm-module-template.git"
   },
   "keywords": [
-    "KrimZenNinja",
-    "npm"
+    "node",
+    "npm",
+    "es6",
+    "babel",
+    "jest",
+    "flow",
+    "flowtype",
+    "circleci",
+    "codecov",
+    "documentation",
+    "KrimZenNinja"
   ],
   "author": "Ryan Kotzen <potz666@gmail.com> (https://github.com/eXigentCoder)",
   "license": "MIT",
