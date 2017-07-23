@@ -17,6 +17,7 @@
     "coverage": "npm test -- --coverage",
     "postcoverage": "opn coverage/lcov-report/index.html",
     "test": "jest",
+    "test-dependencies": "snyk test",
     "unit-test": "nyc mocha \"test/**/*.unit.js\"",
     "prettier": "prettier --write --tab-width=4 --single-quote=true --print-width=120 \"{src,test}/**/*.js\"",
     "lint": "eslint src test --fix",
@@ -26,7 +27,7 @@
     "patch": "npm version patch && npm publish",
     "minor": "npm version minor && npm publish",
     "major": "npm version major && npm publish",
-    "preversion": "npm run prettier && npm run lint && npm t && npm run flow && npm run docs && npm run build && git add . && git commit -m \"adding build artifacts\"",
+    "preversion": "npm run prettier && npm run lint && npm t && npm run test-dependencies && npm run flow && npm run docs && npm run build && git add . && git commit -m \"adding build artifacts\"",
     "postpublish": "git push origin master --follow-tags && chandler push"
   },
   "watch": {
@@ -69,6 +70,7 @@
     "npm-watch": "^0.2.0",
     "opn-cli": "^3.1.0",
     "prettier": "^1.4.4",
-    "rimraf": "^2.6.1"
+    "rimraf": "^2.6.1",
+    "snyk": "^1.36.2"
   }
 }

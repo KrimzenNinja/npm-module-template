@@ -49,6 +49,10 @@ You can either do releases from the master branch or follow the LTS model and br
 	If none of the prebuilt ones fit, you can use `npm version [major | minor | patch | premajor | preminor | prepatch | prerelease] -m "A message that makes sense"`
 1. If you didn't publish from master, make sure to merge back into master if you were fixing a bug or the changes released need to go back to master.
 
+## Snyk dependency checking
+
+You can either add your project via the [web dashboard](https://snyk.io/) or via the cli by installing the lib `npm i -g snyk` and then running the setup `snyk wizzard`.
+
 ## TODO
 
 1. Make a Yeoman generator to do all the steps.
