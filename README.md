@@ -2,6 +2,10 @@
 
 Template project for building [KrimzenNinja](https://github.com/KrimzenNinja/) npm modules
 
+![NPM](https://nodei.co/npm/krimzen-ninja-npm-module-template.png)
+
+![CircleCi](https://circleci.com/gh/KrimzenNinja/npm-module-template.svg?style=shield)
+
 ## Prerequisites
 
 Install [Chandler](https://github.com/mattbrictson/chandler) to sync your `CHANGELOG.md` entries to GitHub
