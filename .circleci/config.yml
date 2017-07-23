@@ -27,3 +27,6 @@ jobs:
       - store_artifacts:
           path: coverage
           prefix: coverage
+      - run:
+          name: post-codecov
+          command: codecov --token=$CODECOV_TOKEN

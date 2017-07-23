@@ -58,6 +58,7 @@
     "babel-jest": "^20.0.0",
     "babel-preset-env": "^1.5.2",
     "babel-preset-flow": "^6.23.0",
+    "codecov": "^2.2.0",
     "documentation": "4.0.0-rc.1",
     "eslint": "^4.1.1",
     "eslint-config-prettier": "^2.2.0",

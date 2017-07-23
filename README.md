@@ -60,6 +60,7 @@ You can either add your project via the [web dashboard](https://snyk.io/) or via
 1. Make a Yeoman generator to do all the steps. 
 1. Update CI step to push coverage to codecov
 1. Badges in the README.md (codecov & d
+    * https://david-dm.org/
 
 ## License
 
