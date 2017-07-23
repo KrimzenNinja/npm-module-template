@@ -22,12 +22,12 @@
     "lint": "eslint src test --fix",
     "lint-ci": "eslint src test",
     "flow": "flow check",
-    "docs": "documentation readme src --section=API",
+    "docs": "documentation readme src --section=API --github --document-exported --readme-file=\"API.md\"",
     "patch": "npm version patch && npm publish",
     "minor": "npm version minor && npm publish",
     "major": "npm version major && npm publish",
     "prepublishOnly": "npm run prettier && npm run lint-ci && npm t && npm run flow && npm run build",
-    "postpublish": "git push origin master --follow-tags"
+    "postpublish": "git push origin master --follow-tags && chandler push"
   },
   "watch": {
     "test": "{src,test}/*.js",
