@@ -12,7 +12,8 @@
   "scripts": {
     "clean": "rimraf lib",
     "prebuild": "npm run clean",
-    "build": "babel src -d lib --copy-files --source-maps",
+    "build": "babel src -d lib --copy-files --source-maps && npm run flow-build",
+    "flow-build": "flow-copy-source src lib",
     "watch": "npm-watch",
     "coverage": "npm test -- --coverage",
     "codecov": "codecov",
@@ -22,17 +23,19 @@
     "prettier": "prettier --write --tab-width=4 --single-quote=true --print-width=120 \"{src,test}/**/*.js\"",
     "lint": "eslint src test --fix",
     "lint-ci": "eslint src test",
-    "flow": "flow check",
+    "flow-check": "flow check",
+    "flow": "flow",
     "docs": "documentation readme src --section=API --github --document-exported --readme-file=\"API.md\"",
     "patch": "npm version patch && npm publish",
     "minor": "npm version minor && npm publish",
     "major": "npm version major && npm publish",
-    "preversion": "npm run prettier && npm run lint && npm t && npm run test-dependencies && npm run flow && npm run docs && npm run build && git add . && git commit -m \"adding build artifacts\"",
+    "preversion": "npm run prettier && npm run lint && npm t && npm run test-dependencies && npm run flow-check && npm run docs && npm run build && git add . && git commit -m \"adding build artifacts\"",
     "postpublish": "git push origin master --follow-tags && chandler push"
   },
   "watch": {
     "test": "{src,test}/*.js",
-    "lint-ci": "{src,test}/*.js"
+    "lint-ci": "{src,test}/*.js",
+    "flow": "{src,test}/*.js"
   },
   "jest": {
     "testRegex": "/test/.*",
@@ -76,6 +79,7 @@
     "eslint-plugin-node": "^5.1.0",
     "eslint-plugin-prettier": "^2.1.2",
     "flow-bin": "^0.50.0",
+    "flow-copy-source": "^1.2.0",
     "jest-cli": "^20.0.0",
     "npm-watch": "^0.2.0",
     "nsp": "^2.6.3",
