@@ -40,6 +40,10 @@ Delete this from the readme once you have setup your project.
 
 [See details](https://github.com/KrimzenNinja/npm-module-template/blob/master/API.md)
 
+## Changelog
+
+[View Changelog](https://github.com/KrimzenNinja/npm-module-template/blob/master/CHANGELOG.md)
+
 # How to publish to NPM
 
 You can either do releases from the master branch or follow the LTS model and branch off when you do a release.
