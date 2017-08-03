@@ -6,12 +6,12 @@
 
 ### sayHello
 
-[src/index.js:8-8](https://github.com/KrimzenNinja/npm-module-template/blob/59ce4185358e4a3dd71d71ede7f4021b0bab446d/src/index.js#L8-L8 "Source code on GitHub")
+[src/index.js:6-6](https://github.com/KrimzenNinja/npm-module-template/blob/efbd5e4d50e01d9bd4d533891ed265601ebe585c/src/index.js#L6-L6 "Source code on GitHub")
 
 This function says hello.
 
 **Parameters**
 
--   `name` **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** Some name to say hello to.
+-   `name`  Some name to say hello to.
 
-Returns **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** The hello message.
+Returns **any** The hello message.
