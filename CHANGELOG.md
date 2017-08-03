@@ -1,10 +1,10 @@
 # Change Log
 
-## [Unreleased](https://github.com/KrimzenNinja/npm-module-template/compare/v0.0.2...HEAD)
+## [Unreleased](https://github.com/KrimzenNinja/krimzen-ninja-module-template/compare/v0.0.2...HEAD)
 
 Unreleased features to be listed here
 
-## [0.0.2](https://github.com/KrimzenNinja/npm-module-template/compare/v0.0.1...v0.0.2) (2017-07-22)
+## [0.0.2](https://github.com/KrimzenNinja/krimzen-ninja-module-template/compare/v0.0.1...v0.0.2) (2017-07-22)
 
 * Testing out if the publish step works.
 

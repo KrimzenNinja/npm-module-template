@@ -1,14 +1,14 @@
-# npm-module-template
+# krimzen-ninja-module-template
 
 Template project for building [KrimzenNinja](https://github.com/KrimzenNinja/) npm modules
 
-![NPM](https://nodei.co/npm/npm-module-template.png)
+![NPM](https://nodei.co/npm/krimzen-ninja-module-template.png)
 
-![CircleCi](https://circleci.com/gh/KrimzenNinja/npm-module-template.svg?style=shield)
+![CircleCi](https://circleci.com/gh/KrimzenNinja/krimzen-ninja-module-template.svg?style=shield)
 
-![Known Vulnerabilities](https://snyk.io/test/npm/npm-module-template/badge.svg)
+![Known Vulnerabilities](https://snyk.io/test/npm/krimzen-ninja-module-template/badge.svg)
 
-[![codecov](https://codecov.io/gh/KrimzenNinja/npm-module-template/branch/master/graph/badge.svg)](https://codecov.io/gh/KrimzenNinja/npm-module-template)
+[![codecov](https://codecov.io/gh/KrimzenNinja/krimzen-ninja-module-template/branch/master/graph/badge.svg)](https://codecov.io/gh/KrimzenNinja/npm-module-template)
 
 ## Prerequisites
 
@@ -38,11 +38,11 @@ Delete this from the readme once you have setup your project.
 
 ## API
 
-[See details](https://github.com/KrimzenNinja/npm-module-template/blob/master/API.md)
+[See details](https://github.com/KrimzenNinja/krimzen-ninja-module-template/blob/master/API.md)
 
 ## Changelog
 
-[View Changelog](https://github.com/KrimzenNinja/npm-module-template/blob/master/CHANGELOG.md)
+[View Changelog](https://github.com/KrimzenNinja/krimzen-ninja-module-template/blob/master/CHANGELOG.md)
 
 # How to publish to NPM
 
