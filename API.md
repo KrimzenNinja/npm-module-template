@@ -6,7 +6,7 @@
 
 ### sayHello
 
-[src/index.js:6-6](https://github.com/KrimzenNinja/krimzen-ninja-module-template/blob/a28bf2354903914f696a352a127b870a9dc164fb/src/index.js#L6-L6 "Source code on GitHub")
+[src/index.js:7-10](https://github.com/KrimzenNinja/krimzen-ninja-module-template/blob/8ae288099b8421bf02221679c8ea3ec5e708fb86/src/index.js#L7-L10 "Source code on GitHub")
 
 This function says hello.
 
@@ -14,4 +14,4 @@ This function says hello.
 
 -   `name`  Some name to say hello to.
 
-Returns **any** The hello message.
+Returns **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** The hello message.
