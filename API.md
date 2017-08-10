@@ -6,7 +6,7 @@
 
 ### sayHello
 
-[src/index.js:7-10](https://github.com/KrimzenNinja/krimzen-ninja-module-template/blob/8ae288099b8421bf02221679c8ea3ec5e708fb86/src/index.js#L7-L10 "Source code on GitHub")
+[src/index.js:7-10](https://github.com/KrimzenNinja/krimzen-ninja-module-template/blob/d6f6d57e78acbab1f715ccd850881dd7f4d49391/src/index.js#L7-L10 "Source code on GitHub")
 
 This function says hello.
 
