@@ -1,5 +1,7 @@
 # krimzen-ninja-module-template
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/KrimzenNinja/krimzen-ninja-module-template.svg)](https://greenkeeper.io/)
+
 Template project for building [KrimzenNinja](https://github.com/KrimzenNinja/) npm modules
 
 ![NPM](https://nodei.co/npm/krimzen-ninja-module-template.png)
